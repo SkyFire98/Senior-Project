@@ -8,7 +8,7 @@ session_start();
 require_once('shodan-PHP-API/src/Shodan.php');
 require_once('shodan-PHP-API/src/Colors.php');
 
-$key = 'UUFuyEaMCkYneMqmlNTImLNl5CwLdpGl';
+$key = 'INERSERT KEY HERE';
 $client = new Shodan($key, TRUE);
 $colors = new Colors();
 
