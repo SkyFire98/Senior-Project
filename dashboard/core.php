@@ -13,15 +13,7 @@ require_once "dashboard-connection.php";
 
 <html class="loading" lang="en" data-textdirection="ltr">
   <head>
-   <!— Global site tag (gtag.js) - Google Analytics —>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153998894-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-153998894-1');
-</script>
 <meta name="robots" content="noindex">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
