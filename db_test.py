@@ -1,18 +1,12 @@
-#!/usr/bin/python3
-import MySQLdb
+import pymysql
 
-db = MySQLdb.connect(host="localhost",  # your host 
-                     user="root",       # username
-                     passwd="insert pass",     # password
-                     db="python_test")   # name of the database
+con = pymysql.connect('localhost', 'root', 'insert password', 'test')
 
-# Create a Cursor object to execute queries.
-cur = db.cursor()
+with con:
 
-# Select data from table using SQL query.
-cur.execute("SELECT * FROM examples")
+    cur = con.cursor()
+    cur.execute("SELECT VERSION()")
 
-# print the first and second columns      
-for row in cur.fetchall() :
-    print(row[0], " ", row[1])
-    
+    version = cur.fetchone()
+
+    print("Database version: {}".format(version[0]))
