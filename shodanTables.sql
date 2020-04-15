@@ -5,7 +5,7 @@ port char(5),
 transport char(4),
 product char(100),
 version char(100),
-server char(100),
+server char(255),
 PRIMARY KEY(entry_id)
 );
 create table cve_info(
