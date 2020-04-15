@@ -1,7 +1,7 @@
 import pymysql
 
 # Open database connection
-db = pymysql.connect("localhost", "root", "limegreen715", "sys",
+db = pymysql.connect("localhost", "user", "password", "db",
 autocommit=True)
 # prepare a cursor object using cursor() method
 cursor = db.cursor()
